@@ -133,8 +133,3 @@ http://localhost#@stock.weliketoshop.net/admin
 
 
 
-Now instead of fetching the URL directly we may also utilize the redirect option if one if available
-
-`/product/nextProduct?currentProductId=6&path=http://evil-user.net`
-
-
