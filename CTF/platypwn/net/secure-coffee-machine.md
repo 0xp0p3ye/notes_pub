@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/abw3qfu9#sTh2iU2gzzGMHc9HoE6JAz8mjXPOJw22SM1UU5IOHoM
+share_updated: 2024-12-10T19:49:45+05:30
+---
 
 # Secure Coffee Machine
 
@@ -97,4 +101,10 @@ Assuming that the  `secret-exchange` function returns the flag sting only when t
 so 
 
 
+```
+>>> message = Msg(True)
+>>> writer.write(message)
+```
 
+
+![[ctf_platypwn_coffee-machine_12.png]]
