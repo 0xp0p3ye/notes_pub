@@ -21,9 +21,14 @@ Connecting to machine via ssh using credentials `ctf:ctf`
 
 3. found few files with write permission but noting interesting 
 
-4. found a folder `app` and file `enterypoint.sh`
+4. Using `tcpdump` to capture the traffic on the `coffee-machine` interface
 
 ![[ctf_platypwn_coffee-machine_4.png]]
+
+
+6. found a folder `app` and file `enterypoint.sh`
+
+![[ctf_platypwn_coffee-machine_5.png]]
 
 ```
 #!/bin/bash
@@ -50,13 +55,46 @@ thought this would lead me to a PrivEsc but this file was purely a rabbit hole ;
 
 checking the files from `app` directory.....
 
-![[ctf_platypwn_coffee-machine_5.png]]
+![[ctf_platypwn_coffee-machine_6.png]]
 
 this looks like a source files of an application named `cyclonedds` 
 
+`https://github.com/eclipse-cyclonedds/cyclonedds-python`
+
+Cyclone DDS Python is **a modern and easy to use binding for Cyclone DDS**. It provides access to almost all features available in the CycloneDDS C API while abstracting all of C's quirks and hassles.
+
+![[ctf_platypwn_coffee-machine_7.png]]
+
+we can see that there are 2 entities in the network
+![[ctf_platypwn_coffee-machine_8.png]]
 
 
 
+after learning about the available commands and it's usage we can know that the user can subscribe and publish to the 2 found entities
+
+`request-secret` &  `secret-exchange`
+
+*fetching the source code of two entities*
+
+![[ctf_platypwn_coffee-machine_9.png]]
+
+![[ctf_platypwn_coffee-machine_10.png]]
+
+`request-secret` This function sets a boolean "send_flag" 
+
+ `secret-exchange` fetches a string named "flag" 
+
+let's now try to request for the flag and see if the  `secret-exchange` functions returns accordingly
+
+to do that we can simply use subscribe command wait for the reply from remote 
+
+
+![[ctf_platypwn_coffee-machine_11.png]]
+
+even after waiting for long time this doesn't return any flag......;)
+
+Assuming that the  `secret-exchange` function returns the flag sting only when the `send_flag` bool is true!
+so 
 
 
 
