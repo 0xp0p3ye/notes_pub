@@ -1,7 +1,7 @@
 
-**Description**
 
-A new service has been deployed that uses advanced algorithms to detect your Operating System. What an invasion of privacy! Can you pwn it?
+> [!Description] ## OS Detection
+> A new service has been deployed that uses advanced algorithms to detect your Operating System. What an invasion of privacy! Can you pwn it?
 
 **Web:**
 

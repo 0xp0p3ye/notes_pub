@@ -1,8 +1,8 @@
 ---
 share_link: https://share.note.sx/abw3qfu9#sTh2iU2gzzGMHc9HoE6JAz8mjXPOJw22SM1UU5IOHoM
-share_updated: 2024-12-10T19:49:45+05:30
+share_updated: 2024-12-11T11:30:14+05:30
 ---
-
+**1**
 # Secure Coffee Machine
 
 You have gained access to a computer controlling the coffee machine in a company using corporate internet of things technologies. Because it is a coffee machine, it is not deemed important enough to be protected or isolated from the rest of the network…
@@ -34,7 +34,7 @@ Connecting to machine via ssh using credentials `ctf:ctf`
 
 ![[ctf_platypwn_coffee-machine_5.png]]
 
-```
+```bash
 #!/bin/bash
 
 set -ex
@@ -98,13 +98,27 @@ to do that we can simply use subscribe command wait for the reply from remote
 even after waiting for long time this doesn't return any flag......;)
 
 Assuming that the  `secret-exchange` function returns the flag sting only when the `send_flag` bool is true!
-so 
+so let's try to return the value to `True` and see if something changes.... 
 
+the user can also send python commands through `cyclonedds publish` command
 
 ```
+cyclonedds publish request-secret
+```
+
+```python
 >>> message = Msg(True)
 >>> writer.write(message)
 ```
 
 
 ![[ctf_platypwn_coffee-machine_12.png]]
+
+and we get the flag once the command is sent in the python prompt
+`Msg(flag='PP{V1rtu@l-D0m@1n::8zCcoip7secI}')`
+
+
+
+
+
+
