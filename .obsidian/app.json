@@ -1,1 +1,15 @@
-{}
+{
+  "showLineNumber": false,
+  "strictLineBreaks": true,
+  "foldIndent": true,
+  "readableLineLength": false,
+  "showIndentGuide": true,
+  "defaultViewMode": "preview",
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
+}
