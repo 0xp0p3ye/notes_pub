@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "defhawk - 0xp0p3ye.md",
+                "file": "complaints-web.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "defhawk - 0xp0p3ye"
+              "title": "complaints-web"
             }
           }
         ],
@@ -106,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 855.5
+    "width": 221.5
   },
   "right": {
     "id": "5f3e609796cd0782",
@@ -193,6 +193,17 @@
   },
   "active": "580aa9fb8be32d93",
   "lastOpenFiles": [
+    "mem/cyberdef/mrRobot/mrRobot-target1.md",
+    "CTF/l4ugh/dfir/the-joker.md",
+    "CTF/l4ugh/dfir/batman-Gotham's-secret.md",
+    "CTF/l4ugh/dfir",
+    "CTF/l4ugh",
+    "CTF/platypwn/web/pretty-html-page.md",
+    "CTF/platypwn/web/os-detection.md",
+    "CTF/platypwn/web/cash-puzzle.md",
+    "CTF/platypwn/net/secure-coffee-machine.md",
+    "CTF/nite/web/cybernotes.md",
+    "defhawk - 0xp0p3ye.md",
     "assets/ctf_defhawk_rev_stringcipher_3.png",
     "assets/ctf_defhawk_rev_stringcipher_1.png",
     "assets/ctf_defhawk_foren_followthetraces_3.png",
@@ -203,14 +214,9 @@
     "assets/ctf_defhawk_bin_docker_5.png",
     "assets/ctf_defhawk_bin_docker_4.png",
     "assets/ctf_defhawk_bin_docker_3.png",
-    "assets/ctf_defhawk_bin_docker_1.png",
     "complaints-web.md",
-    "defhawk - 0xp0p3ye.md",
     "JWT.md",
-    "CTF/platypwn/web/cash-puzzle.md",
-    "CTF/nite/web/cybernotes.md",
     "Untitled.md",
-    "mem/cyberdef/mrRobot/mrRobot-target1.md",
     "reckoning.md",
     "Web/portswigger/SSRF/1-common-ssrf.md",
     "mem/cyberdef/mrRobot",
@@ -219,9 +225,6 @@
     "Web/portswigger/SSRF/2-open-redirect.md",
     "Web/portswigger/SSRF/3-blind-ssrf.md",
     "manifesto.md",
-    "CTF/platypwn/web/pretty-html-page.md",
-    "CTF/platypwn/web/os-detection.md",
-    "CTF/platypwn/net/secure-coffee-machine.md",
     "CTF/nite/web",
     "CTF/nite"
   ]

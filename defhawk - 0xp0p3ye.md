@@ -1,7 +1,7 @@
 
 
 - Full Name: Shanjaikumaar S
-- Discord Alias: 0x0p3ye
+- Discord Alias: 0xp0p3ye
 - Platform Alias: 0xp0p3ye
 - Phone Number: +91 9597157552
 
